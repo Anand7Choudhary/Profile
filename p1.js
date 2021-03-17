@@ -2,6 +2,8 @@ function main_menu() {
   document.getElementById("loading_body").style.display = "none";
   document.getElementById("main_body").style.display = "block";
 }
+
+
 function open_menu(){
     var x=document.getElementById("nav_content");
     var box1=document.getElementById("b1");
@@ -23,40 +25,71 @@ function open_menu(){
     }
 }
 
-var slideindex=1;
-var x = document.getElementsByClassName("pro");
-var y = document.getElementsByClassName("circleturn");
-// var a = document.getElementById("leftturn");
-// var b = document.getElementById("rightturn");
-var del;
-showproj(slideindex);
 
-function move(n){
-    slideindex+=n;
-    showproj(slideindex);
+var si = 1;
+var clear;
+slideshow1();
+function move(n) {
+  clearTimeout(clear);
+  si += n - 1;
+  slideshow1();
 }
-
-function circlemove(n){
-    slideindex = n;
-    showproj(slideindex);
+function mover() {
+  clearTimeout(clear);
+  slideshow1();
 }
-
-function showproj(n){
+function circlemove(n) {
+  clearTimeout(clear);
+  si = n;
+  slideshow1();
+}
+function slideshow1() {
+  var x = document.getElementsByClassName("pro");
+  var y = document.getElementsByClassName("circleturn");
   var i;
-//   a.addEventListener("click", function(){n--});
-//   b.addEventListener("click", function(){n++});
-  if (n > x.length) {
-    slideindex = 1;
+  if (si < 1) {
+    si = x.length;
   }
-  if (n < 1) {
-    slideindex = x.length;
+  if (si > x.length) {
+    si = 1;
   }
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
     y[i].style.backgroundColor = "transparent";
   }
-//   ++slideindex;
-  x[slideindex - 1].style.display = "block";
-  y[slideindex - 1].style.backgroundColor = "rgba(255,255,255)";
-//   del = setTimeout(showproj, 2000, slideindex);
+  x[si - 1].style.display = "block";
+  y[si - 1].style.backgroundColor = "white";
+  si++;
+  clear = setTimeout(slideshow1, 2000);
+}
+
+var si2 = 2;
+var clear2;
+slideshow2();
+function move1(n) {
+  clearTimeout(clear2);
+  si2 += n -1;
+  slideshow2();
+}
+function mover1() {
+  clearTimeout(clear2);
+  slideshow2();
+}
+function slideshow2() {
+  var p = document.getElementsByClassName("pic");
+  var z;
+  if (si2 < 2) {
+    si2 = p.length;
+  }
+  if (si2 >= p.length) {
+    si2 = 2;
+  }
+  for (z = 0; z < p.length; z++) {
+    p[z].style.display = "none";
+  }
+  p[si2 - 2].style.display = "block";
+  p[si2 - 1].style.display = "block";
+  p[si2].style.display = "block";
+  si2++;
+  clear2 = setTimeout(slideshow2, 4000);
 }
