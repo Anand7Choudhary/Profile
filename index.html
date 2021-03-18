@@ -19,7 +19,7 @@
     <div class="loading_body" id="loading_body"><div class="loading"></div></div>
     <div class="main_body" id="main_body">
     <header>Created by Anand Choudhary</header>
-    <div class="nav">
+    <div class="nav" id="nav">
         <div class="ham" id="ham" onclick="open_menu()">
             <div class="b1" id="b1"></div><div class="b2" id="b2"></div><div class="b3" id="b3"></div>
         </div>
@@ -35,13 +35,13 @@
         <a class="sml" href="https://www.instagram.com/anand_choudhary_07/" target="_blank"><div class="sm"><p class="p3"><i class="fa fa-linkedin"></i></p></div></a>
         <a class="sml" href="https://www.instagram.com/anand_choudhary_07/" target="_blank"><div class="sm"><p class="p4"><i class="fa fa-instagram"></i></p></div></a>
     </div>
-    <div class="profile">
+    <div class="profile" id="profile">
         <img alt="anand" src="img10.png">
         <p class="p1" id="p1">ANAND CHOUDHARY</p>
         <p class="p2" id="p2">Student | Son | Brother</p>
     </div>
     <a name="aboutme">
-    <div class="aboutme">
+    <div class="aboutme" id="aboutme">
         <div class="image_zoom1"><img alt="404" src="img1.png"></div>
         <div class="info1">
             <div class="about_me">KNOW ME</div>
@@ -68,7 +68,7 @@
     </div>
     </a>
     <a name="mywork">
-    <div class="mywork">
+    <div class="mywork" id="mywork">
         <div class="myprojects">
             <p class="p1">PROJECTS</p>
         </div>
@@ -85,7 +85,7 @@
     </div>
     </a>
     <a name="gallery">
-        <div class="gallery">
+        <div class="gallery" id="gallery">
             <div class="gal_heading">
                 <p class="p1">My Timeline</p>
             </div>
@@ -106,7 +106,29 @@
                 <div class="right" id="right" onclick="mover1()">&#10095;</div>
             </div>
             <div class="seemore">
-                <p class="p1">see more...</p>
+                <p class="p1" onclick="opengal()">see more</p>
+            </div>
+        </div>
+    </a>
+    <a name="fullGal">
+        <div class="fullGal" id="fullGal">
+            <div class="backbutton" onclick="opengal()">
+                <p class="p1"><i class="fa fa-arrow-left"></i>&ensp;BACK</p>
+            </div>
+            <div class="fullGal_heading">
+                <p class="p1">GALLERY</p>
+            </div>
+            <div class="fullGal_allpic">
+                <div class="pic_bg"><img class="picc1 picc" alt="404" src="img1.png"></div>
+                <div class="pic_bg"><img class="picc2 picc" alt="404" src="img2.png"></div>
+                <div class="pic_bg"><img class="picc3 picc" alt="404" src="img3.png"></div>
+                <div class="pic_bg"><img class="picc4 picc" alt="404" src="img4.png"></div>
+                <div class="pic_bg"><img class="picc5 picc" alt="404" src="img5.png"></div>
+                <div class="pic_bg"><img class="picc6 picc" alt="404" src="img6.png"></div>
+                <div class="pic_bg"><img class="picc7 picc" alt="404" src="img7.png"></div>
+                <div class="pic_bg"><img class="picc8 picc" alt="404" src="img8.png"></div>
+                <div class="pic_bg"><img class="picc9 picc" alt="404" src="img9.png"></div>
+                <div class="pic_bg"><img class="picc10 picc" alt="404" src="img10.png"></div>
             </div>
         </div>
     </a>

@@ -93,3 +93,31 @@ function slideshow2() {
   si2++;
   clear2 = setTimeout(slideshow2, 4000);
 }
+
+
+function opengal(){
+  var q = document.getElementById("profile");
+  var w = document.getElementById("aboutme");
+  var e = document.getElementById("mywork");
+  var r = document.getElementById("gallery");
+  var u = document.getElementById("nav");
+  var t = document.getElementById("fullGal");
+  if(t.style.display=="none")
+  {
+    q.style.display="none";
+    w.style.display = "none";
+    e.style.display="none";
+    r.style.display="none";
+    u.style.display="none";
+    t.style.display = "block";
+  }
+  else
+  {
+    q.style.display="block";
+    w.style.display = "flex";
+    e.style.display="block";
+    r.style.display="block";
+    u.style.display = "flex";
+    t.style.display = "none";
+  }
+}
