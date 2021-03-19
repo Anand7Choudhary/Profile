@@ -126,74 +126,93 @@ function opengal() {
   (document.getElementById("footer").style.display = "none");
   }
 }
-
+function sleep(time) {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}
 function funicon1() {
- (document.getElementById("profile").style.display = "block");
-  (document.getElementById("aboutme").style.display = "none");
-  (document.getElementById("mywork").style.display = "none");
-  (document.getElementById("gallery").style.display = "none");
-   (document.getElementById("nav").style.display = "none");
-   (document.getElementById("contact").style.display = "none");
-  (document.getElementById("footer").style.display = "none");
   document.getElementById("icon1").style.color = "rgb(0, 189, 63)";
   document.getElementById("icon2").style.color = "rgb(180, 180, 180)";
   document.getElementById("icon3").style.color = "rgb(180, 180, 180)";
   document.getElementById("icon4").style.color = "rgb(180, 180, 180)";
   document.getElementById("icon5").style.color = "rgb(180, 180, 180)";
+  sleep(250).then(() => {
+    // Do something after the sleep!
+    document.getElementById("profile").style.display = "block";
+    document.getElementById("aboutme").style.display = "none";
+    document.getElementById("mywork").style.display = "none";
+    document.getElementById("gallery").style.display = "none";
+    document.getElementById("nav").style.display = "none";
+    document.getElementById("contact").style.display = "none";
+    document.getElementById("footer").style.display = "none";
+    document.getElementById("fullGal").style.display = "none";
+  });
 }
 function funicon2() {
-  (document.getElementById("profile").style.display = "none");
+  document.getElementById("icon1").style.color = "rgb(180, 180, 180)";
+  document.getElementById("icon2").style.color = "rgb(0, 189, 63)";
+  document.getElementById("icon3").style.color = "rgb(180, 180, 180)";
+  document.getElementById("icon4").style.color = "rgb(180, 180, 180)";
+  document.getElementById("icon5").style.color = "rgb(180, 180, 180)";
+  sleep(250).then(() => {
+    // Do something after the sleep!
+   (document.getElementById("profile").style.display = "none");
   (document.getElementById("aboutme").style.display = "block");
   (document.getElementById("mywork").style.display = "none");
   (document.getElementById("gallery").style.display = "none");
    (document.getElementById("nav").style.display = "none");
    (document.getElementById("contact").style.display = "none");
   (document.getElementById("footer").style.display = "none");
-  document.getElementById("icon1").style.color = "rgb(180, 180, 180)";
-  document.getElementById("icon2").style.color = "rgb(0, 189, 63)";
-  document.getElementById("icon3").style.color = "rgb(180, 180, 180)";
-  document.getElementById("icon4").style.color = "rgb(180, 180, 180)";
-  document.getElementById("icon5").style.color = "rgb(180, 180, 180)";
+  (document.getElementById("fullGal").style.display="none"); 
+  });
 }
 function funicon3() {
-  document.getElementById("profile").style.display = "none";
+  document.getElementById("icon1").style.color = "rgb(180, 180, 180)";
+  document.getElementById("icon2").style.color = "rgb(180, 180, 180)";
+  document.getElementById("icon3").style.color = "rgb(0, 189, 63)";
+  document.getElementById("icon4").style.color = "rgb(180, 180, 180)";
+  document.getElementById("icon5").style.color = "rgb(180, 180, 180)";
+  sleep(250).then(() => {
+    // Do something after the sleep!
+    document.getElementById("profile").style.display = "none";
   document.getElementById("aboutme").style.display = "none";
   document.getElementById("mywork").style.display = "block";
   document.getElementById("gallery").style.display = "none";
   document.getElementById("nav").style.display = "none";
   document.getElementById("contact").style.display = "none";
   document.getElementById("footer").style.display = "none";
-  document.getElementById("icon1").style.color = "rgb(180, 180, 180)";
-  document.getElementById("icon2").style.color = "rgb(180, 180, 180)";
-  document.getElementById("icon3").style.color = "rgb(0, 189, 63)";
-  document.getElementById("icon4").style.color = "rgb(180, 180, 180)";
-  document.getElementById("icon5").style.color = "rgb(180, 180, 180)";
+  document.getElementById("fullGal").style.display = "none";
+  });
 }
 function funicon4() {
-  document.getElementById("profile").style.display = "none";
+  document.getElementById("icon1").style.color = "rgb(180, 180, 180)";
+  document.getElementById("icon2").style.color = "rgb(180, 180, 180)";
+  document.getElementById("icon3").style.color = "rgb(180, 180, 180)";
+  document.getElementById("icon4").style.color = "rgb(0, 189, 63)";
+  document.getElementById("icon5").style.color = "rgb(180, 180, 180)";
+  sleep(250).then(() => {
+    // Do something after the sleep!
+    document.getElementById("profile").style.display = "none";
   document.getElementById("aboutme").style.display = "none";
   document.getElementById("mywork").style.display = "none";
   document.getElementById("gallery").style.display = "block";
   document.getElementById("nav").style.display = "none";
   document.getElementById("contact").style.display = "none";
   document.getElementById("footer").style.display = "none";
+  document.getElementById("fullGal").style.display = "none";
+  });
+}
+function funicon5() {
   document.getElementById("icon1").style.color = "rgb(180, 180, 180)";
   document.getElementById("icon2").style.color = "rgb(180, 180, 180)";
   document.getElementById("icon3").style.color = "rgb(180, 180, 180)";
-  document.getElementById("icon4").style.color = "rgb(0, 189, 63)";
-  document.getElementById("icon5").style.color = "rgb(180, 180, 180)";
-}
-function funicon5() {
-  document.getElementById("profile").style.display = "none";
+  document.getElementById("icon4").style.color = "rgb(180, 180, 180)";
+  document.getElementById("icon5").style.color = "rgb(0, 189, 63)";
+    document.getElementById("profile").style.display = "none";
   document.getElementById("aboutme").style.display = "none";
   document.getElementById("mywork").style.display = "none";
   document.getElementById("gallery").style.display = "none";
   document.getElementById("nav").style.display = "none";
   document.getElementById("contact").style.display = "block";
   document.getElementById("footer").style.display = "flex";
-  document.getElementById("icon1").style.color = "rgb(180, 180, 180)";
-  document.getElementById("icon2").style.color = "rgb(180, 180, 180)";
-  document.getElementById("icon3").style.color = "rgb(180, 180, 180)";
-  document.getElementById("icon4").style.color = "rgb(180, 180, 180)";
-  document.getElementById("icon5").style.color = "rgb(0, 189, 63)";
+  document.getElementById("fullGal").style.display = "none";
 }
